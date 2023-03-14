@@ -1,0 +1,170 @@
+*
+{
+	margin: 0;	padding: 0;	box-sizing: border-box;
+}
+
+body
+{
+	/* background-image: url(../img/bg.png) */
+	background-color: white;
+}
+
+main
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1
+{
+	text-align: center;
+}
+
+.cap
+{
+	text-transform: capitalize;
+}
+
+#legends, #heroes, #lineup
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+#lineup
+{
+	justify-content: center;
+}
+
+#legends > img, #legends > div, #heroes > img, #lineup > img
+{
+	width: 25%;
+	padding: 10px;
+	height: 400px;
+}
+
+#heroes > img
+{
+	width: 20%;
+}
+
+#legends > img
+{
+	padding: 20px;
+}
+
+#chosenLegend
+{
+	color: grey;
+	text-decoration: underline;
+}
+
+.selected
+{
+	background-color: #00498F;
+	border-radius: 9px;
+}
+
+h1
+{
+	background-color: #333333;
+	color: #75ABFF;
+	border: 1px solid #00498F;
+}
+
+main > div
+{
+	background-color: #111111;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#legendText > p
+{
+	color: white;
+	font-size: 400%;
+	text-align: center;
+	font-family: 'Akaya Kanadaka', cursive;
+}
+
+#player1, #player2
+{
+	color: white;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.radio
+{
+	padding: 5px;
+	color: white;
+}
+
+.radio > label
+{
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid grey;
+	
+}
+
+section
+{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.unclickable
+{
+	pointer-events: none;
+}
+
+div#info
+{
+	background-color: white;
+	width: 200px;
+	position: absolute;
+	top: 0; 	
+	z-index: 100;
+	color: black;
+	opacity: .9;
+	padding: 10px;
+}
+
+#info:hover
+{
+	opacity: 1;
+}
+
+main
+{
+	height: 100vh;
+	overflow: auto;
+}
+
+div#info > p
+{
+	padding: 5px;
+	border-bottom: 1px solid grey;
+	font-size: medium;
+	opacity: 1;
+}
+
+#cardName
+{
+	margin-bottom: 5px;
+	text-align: center;
+	border-bottom: 1px solid grey;
+}
+
+.effectTitle
+{
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: large;
+}
+

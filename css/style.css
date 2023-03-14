@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+*
+{
+	margin: 0;	padding: 0;	box-sizing: border-box;
+}
+
+body
+{
+	background-image: url(../img/bg.png);
+	/* background-color: #F4F4F4; */
+}
+
+	/* Make this unclickable if you don't want them to be able to go back */
+.unclickable
+{
+	pointer-events: none;
+}
+
+div#info
+{
+	background-color: white;
+	width: 200px;
+	position: absolute;
+	top: 0; 	
+	z-index: 100;
+	color: black;
+	opacity: .9;
+	padding: 10px;
+}
+
+#info:hover
+{
+	opacity: 1;
+}
+
+main
+{
+	height: 100vh;
+	overflow: auto;
+}
+
+div#info > p
+{
+	padding: 5px;
+	border-bottom: 1px solid grey;
+	font-size: medium;
+	opacity: 1;
+}
+
+#cardName
+{
+	margin-bottom: 5px;
+	text-align: center;
+	border-bottom: 1px solid grey;
+}
+
+.effectTitle
+{
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: large;
+}
+

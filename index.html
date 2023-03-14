@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Exiled Legends</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link type="text/css" rel="stylesheet" href="css/style-index.css">
+		<link href="img/icon.jpg" rel="icon" type="image/x-icon">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/pics.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/script-index.js"></script>
+		<script src="js/script.js"></script>	
+	</head>
+
+	<body>
+		<div id="info" class="">
+			<h3 id="cardName"></h3>
+			<p id="effect1"></p>
+			<p id="effect2"></p>
+			<p id="effect3"></p>
+			<!-- Fill this with Info on the Card. onhover fill info of the card		 -->
+		</div>
+		<main>
+			<h1 id="legendsTitle">Choose Your Legend</h1>
+			<div id="legends">
+				<img src="img/air/legend.jpg" alt="Legend" onclick="selectLegend(this)" id="air" data-legend="air" data-card="legendary" onmouseover="cardInfo(this)">
+				<img src="img/dark/legend.jpg" alt="Legend" onclick="selectLegend(this)" id="dark" data-legend="dark" data-card="legendary" onmouseover="cardInfo(this)">
+				<img src="img/earth/legend.jpg" alt="Legend" onclick="selectLegend(this)" id="earth" data-legend="earth" data-card="legendary" onmouseover="cardInfo(this)">
+				<img src="img/fire/legend.jpg" alt="Legend" onclick="selectLegend(this)" id="fire" data-legend="fire" data-card="legendary" onmouseover="cardInfo(this)">
+				<img src="img/light/legend.jpg" alt="Legend" onclick="selectLegend(this)" id="light" data-legend="light" data-card="legendary" onmouseover="cardInfo(this)">
+				<img src="img/unknown/legend.jpg" alt="Legend" onclick="selectLegend(this)" id="unknown" data-legend="unknown" data-card="legendary" onmouseover="cardInfo(this)">
+				<img src="img/water/legend.jpg" alt="Legend" onclick="selectLegend(this)" id="water" data-legend="water" data-card="legendary" onmouseover="cardInfo(this)">
+				
+				
+				<div id="legendText">
+					<section>
+						<span class="radio">
+							<input type="radio" id="player1" value="one" onchange="player.setPlayerNumber('1')" name="playerNumber"><label for="one">Player 1</label>
+						</span>
+						<span class="radio">
+							<input type="radio" id="player2" value="two" onchange="player.setPlayerNumber('2')" name="playerNumber"><label for="two">Player 2</label>
+						</span>
+					</section>
+					<p>Your Legend is <span id="chosenLegend" class="cap">Not Chosen</span></p>
+				</div>
+			</div>
+			<h1 class="unclickable" id="heroesTitle"></h1>
+			<div id="heroes">
+				
+			</div>
+			<h1 class="unclickable" id="lineupTitle" onclick="lineup()"></h1>
+			<div id="lineup">
+				
+			</div>
+		</main>
+		
+
+	</body>
+
+</html>
